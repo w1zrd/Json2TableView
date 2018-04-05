@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,12 +14,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheActors" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x28-Wm-YMD">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActorCell" rowHeight="60" id="oNA-Sw-mfG" customClass="TableViewCell" customModule="TheActors" customModuleProvider="target">
@@ -84,12 +83,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x28-Wm-YMD" secondAttribute="trailing" id="ICs-5v-hgB"/>
-                            <constraint firstItem="x28-Wm-YMD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QkW-Zv-d6Q"/>
-                            <constraint firstItem="x28-Wm-YMD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mMb-pe-deG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x28-Wm-YMD" secondAttribute="bottom" id="zuv-TV-ikA"/>
+                            <constraint firstAttribute="trailing" secondItem="x28-Wm-YMD" secondAttribute="trailing" id="ICs-5v-hgB"/>
+                            <constraint firstItem="x28-Wm-YMD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QkW-Zv-d6Q"/>
+                            <constraint firstItem="x28-Wm-YMD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mMb-pe-deG"/>
+                            <constraint firstAttribute="bottom" secondItem="x28-Wm-YMD" secondAttribute="bottom" id="zuv-TV-ikA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="x28-Wm-YMD" id="PP8-n8-p9b"/>

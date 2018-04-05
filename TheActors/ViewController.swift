@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // download json data
         DownloadJson()
+        tableView.tableFooterView = UIView()
     }
 
     func DownloadJson() {
@@ -52,6 +53,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         cell.CellLbl1.text = actors[indexPath.row].name
         cell.CellLbl2.text = actors[indexPath.row].dob
+        
+        cell.contentView.backgroundColor = .darkGray
+        cell.backgroundColor = .darkGray //.lightGray
+        
         if let imageURL = URL(string: actors[indexPath.row].image) {
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageURL)
