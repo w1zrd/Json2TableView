@@ -9,11 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    final let url = URL(string: "http://microblogging.wingnity.com/JSONParsingTutorial/jsonActors")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // download json data
+        DownloadJson()
     }
 
+    func DownloadJson() {
+        guard let jsonURL = url else {return}
+        URLSession.shared.dataTask(with: jsonURL) {(data, response, error) in
+            print("downloaded")
+        }.resume()
+    }
 }
 
