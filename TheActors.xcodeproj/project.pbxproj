@@ -13,6 +13,7 @@
 		19A93CE62075ECB400EEF52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A93CE52075ECB400EEF52D /* Assets.xcassets */; };
 		19A93CE92075ECB400EEF52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A93CE72075ECB400EEF52D /* LaunchScreen.storyboard */; };
 		19A93CF32075F19500EEF52D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A93CF22075F19500EEF52D /* TableViewCell.swift */; };
+		19A93CF52075F66C00EEF52D /* Actors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A93CF42075F66C00EEF52D /* Actors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		19A93CE82075ECB400EEF52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19A93CEA2075ECB400EEF52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19A93CF22075F19500EEF52D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		19A93CF42075F66C00EEF52D /* Actors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				19A93CDE2075ECB200EEF52D /* AppDelegate.swift */,
 				19A93CE02075ECB200EEF52D /* ViewController.swift */,
 				19A93CF22075F19500EEF52D /* TableViewCell.swift */,
+				19A93CF42075F66C00EEF52D /* Actors.swift */,
 				19A93CE22075ECB200EEF52D /* Main.storyboard */,
 				19A93CE52075ECB400EEF52D /* Assets.xcassets */,
 				19A93CE72075ECB400EEF52D /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				19A93CF32075F19500EEF52D /* TableViewCell.swift in Sources */,
 				19A93CE12075ECB200EEF52D /* ViewController.swift in Sources */,
 				19A93CDF2075ECB200EEF52D /* AppDelegate.swift in Sources */,
+				19A93CF52075F66C00EEF52D /* Actors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
